@@ -4,14 +4,19 @@
   <meta charset="UTF-8">
   <title>AI NLP Translator (AWS Demo)</title>
 
+<<<<<<< HEAD
   <!-- AWS SDK (must be loaded BEFORE app.js) -->
   <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1480.0.min.js"></script>
 
   <!-- Basic UI styling -->
+=======
+  <!-- Optional: better UI spacing -->
+>>>>>>> 409d9a32662707dab9fc500f513cbdebf579b6c2
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 30px;
+<<<<<<< HEAD
       background-color: #f4f4f4;
     }
 
@@ -53,6 +58,24 @@
       padding: 10px;
       border-radius: 5px;
       width: 320px;
+=======
+    }
+
+    textarea {
+      width: 300px;
+      height: 100px;
+    }
+
+    button {
+      padding: 8px 15px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    #output {
+      margin-top: 10px;
+      font-weight: bold;
+>>>>>>> 409d9a32662707dab9fc500f513cbdebf579b6c2
     }
   </style>
 </head>
@@ -61,18 +84,26 @@
 
   <h2>AI NLP Translator (AWS Demo)</h2>
 
+<<<<<<< HEAD
   <!-- Input box -->
   <textarea id="inputText" placeholder="Enter text here..."></textarea>
 
   <br>
 
   <!-- Language selection -->
+=======
+  <textarea id="inputText" placeholder="Enter text here..."></textarea>
+
+  <br><br>
+
+>>>>>>> 409d9a32662707dab9fc500f513cbdebf579b6c2
   <select id="lang">
     <option value="kn">Kannada</option>
     <option value="hi">Hindi</option>
     <option value="ta">Tamil</option>
   </select>
 
+<<<<<<< HEAD
   <br>
 
   <!-- Translate button -->
@@ -83,6 +114,15 @@
   <p id="output"></p>
 
   <!-- Your JS logic -->
+=======
+  <br><br>
+
+  <button onclick="translateText()">Translate</button>
+
+  <h3>Output:</h3>
+  <p id="output"></p>
+
+>>>>>>> 409d9a32662707dab9fc500f513cbdebf579b6c2
   <script src="app.js"></script>
 
 </body>
