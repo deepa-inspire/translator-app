@@ -1,13 +1,40 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AI NLP Translator</title>
+  <meta charset="UTF-8">
+  <title>AI NLP Translator (AWS Demo)</title>
+
+  <!-- Optional: better UI spacing -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+
+    textarea {
+      width: 300px;
+      height: 100px;
+    }
+
+    button {
+      padding: 8px 15px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    #output {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
 </head>
+
 <body>
+
   <h2>AI NLP Translator (AWS Demo)</h2>
 
-  <textarea id="inputText" placeholder="Enter text"></textarea>
+  <textarea id="inputText" placeholder="Enter text here..."></textarea>
+
   <br><br>
 
   <select id="lang">
@@ -24,5 +51,6 @@
   <p id="output"></p>
 
   <script src="app.js"></script>
+
 </body>
 </html>
