@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AI NLP Translator (AWS Demo)</title>
+
+  <!-- AWS SDK (must be loaded BEFORE app.js) -->
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1480.0.min.js"></script>
+
+  <!-- Basic UI styling -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f4f4f4;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    textarea {
+      width: 320px;
+      height: 120px;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    select, button {
+      padding: 8px;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    button {
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #output {
+      margin-top: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #222;
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      width: 320px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>AI NLP Translator (AWS Demo)</h2>
+
+  <!-- Input box -->
+  <textarea id="inputText" placeholder="Enter text here..."></textarea>
+
+  <br>
+
+  <!-- Language selection -->
+  <select id="lang">
+    <option value="kn">Kannada</option>
+    <option value="hi">Hindi</option>
+    <option value="ta">Tamil</option>
+  </select>
+
+  <br>
+
+  <!-- Translate button -->
+  <button onclick="translateText()">Translate</button>
+
+  <!-- Output -->
+  <h3>Output:</h3>
+  <p id="output"></p>
+
+  <!-- Your JS logic -->
+  <script src="app.js"></script>
+
+</body>
+</html>
