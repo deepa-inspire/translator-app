@@ -1,129 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>AI NLP Translator (AWS Demo)</title>
-
-<<<<<<< HEAD
-  <!-- AWS SDK (must be loaded BEFORE app.js) -->
-  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1480.0.min.js"></script>
-
-  <!-- Basic UI styling -->
-=======
-  <!-- Optional: better UI spacing -->
->>>>>>> 409d9a32662707dab9fc500f513cbdebf579b6c2
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 30px;
-<<<<<<< HEAD
-      background-color: #f4f4f4;
-    }
-
-    h2 {
-      color: #333;
-    }
-
-    textarea {
-      width: 320px;
-      height: 120px;
-      padding: 10px;
-      font-size: 14px;
-    }
-
-    select, button {
-      padding: 8px;
-      margin-top: 10px;
-      font-size: 14px;
-    }
-
-    button {
-      cursor: pointer;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-    }
-
-    button:hover {
-      background-color: #0056b3;
-    }
-
-    #output {
-      margin-top: 15px;
-      font-size: 16px;
-      font-weight: bold;
-      color: #222;
-      background: white;
-      padding: 10px;
-      border-radius: 5px;
-      width: 320px;
-=======
-    }
-
-    textarea {
-      width: 300px;
-      height: 100px;
-    }
-
-    button {
-      padding: 8px 15px;
-      margin-top: 10px;
-      cursor: pointer;
-    }
-
-    #output {
-      margin-top: 10px;
-      font-weight: bold;
->>>>>>> 409d9a32662707dab9fc500f513cbdebf579b6c2
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>AI NLP Translator</title>
 </head>
-
 <body>
 
-  <h2>AI NLP Translator (AWS Demo)</h2>
+    <h2>AI NLP Translator</h2>
 
-<<<<<<< HEAD
-  <!-- Input box -->
-  <textarea id="inputText" placeholder="Enter text here..."></textarea>
+    <textarea id="inputText" placeholder="Enter text here..." rows="4" cols="40"></textarea>
+    <br><br>
 
-  <br>
+    <select id="lang">
+        <option value="kn">Kannada</option>
+        <option value="hi">Hindi</option>
+        <option value="ta">Tamil</option>
+    </select>
 
-  <!-- Language selection -->
-=======
-  <textarea id="inputText" placeholder="Enter text here..."></textarea>
+    <br><br>
 
-  <br><br>
+    <button onclick="translateText()">Translate</button>
 
->>>>>>> 409d9a32662707dab9fc500f513cbdebf579b6c2
-  <select id="lang">
-    <option value="kn">Kannada</option>
-    <option value="hi">Hindi</option>
-    <option value="ta">Tamil</option>
-  </select>
+    <h3>Output:</h3>
+    <div id="output"></div>
 
-<<<<<<< HEAD
-  <br>
-
-  <!-- Translate button -->
-  <button onclick="translateText()">Translate</button>
-
-  <!-- Output -->
-  <h3>Output:</h3>
-  <p id="output"></p>
-
-  <!-- Your JS logic -->
-=======
-  <br><br>
-
-  <button onclick="translateText()">Translate</button>
-
-  <h3>Output:</h3>
-  <p id="output"></p>
-
->>>>>>> 409d9a32662707dab9fc500f513cbdebf579b6c2
-  <script src="app.js"></script>
+    <script src="app.js"></script>
 
 </body>
 </html>
